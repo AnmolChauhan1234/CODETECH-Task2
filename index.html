@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <h1>Weather App</h1>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="search-box">
+            <input type="text" id="input-area" placeholder="Enter your city" class="rounded-full">
+            <button class="search-icon js-search-icon rounded-full" onclick="fetchWeatherData()">
+                <svg width="15" height="15" class="DocSearch-Search-Icon" viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content flex">
+        <section class="weather-card js-weather-card">
+            <div class="weather-data">
+                <span class="weather-icon js-weather-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4814/4814275.png" alt="Clear">
+                    <p>Clear Sky</p>
+                </span>
+                <span class="temperature js-temperature">22.4 °C</span>
+                <span class="city-name js-city-name">New York</span>
+            </div>
+
+            <div class="other-info">
+                <div class="humidity">
+                    <img src="https://cdn-icons-png.flaticon.com/512/578/578135.png" alt="Humidity-icon">
+                    <span class="humidity-details">
+                        <p>Humidity</p>
+                        <p class="js-humidity-data">34%</p>
+                    </span>
+                </div>
+                <div class="wind">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6232/6232535.png" alt="Wind">
+                    <span class="wind-details">
+                        <p>Wind</p>
+                        <p class="js-wind-speed">23 km/h</p>
+                    </span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
